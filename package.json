@@ -1,0 +1,20 @@
+{
+  "author": "Carina Gouveia",
+  "license": "ISC",
+  "name": "qualitymap_challenge",
+  "description": "Desafio técnico",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^12.14.0"
+  },
+  "dependencies": {
+   
+  }
+ 
+}
