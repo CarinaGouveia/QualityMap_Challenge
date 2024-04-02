@@ -14,7 +14,7 @@ context('Dado que o usuário acesse a página de registro', () => {
     cy.visit('/register?returnUrl=%2F');
   });
   describe('Quando o usuário preencher o formulário com informações válidas e clicar em "Registrar"', () => {
-    it('Então o usuário deverá visualiar uma mensagem de sucesso', () => {
+    it('Então o usuário deverá visualizar uma mensagem de sucesso', () => {
      cy.allure().descriptionHtml(cenarios.CriarRegistro);
      cy.PreencherFormulario(nome,sobrenome,email,password,confirmePassword);
      cy.BotaoFinalizarRegistro();
