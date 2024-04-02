@@ -1,4 +1,4 @@
-require('@shelex/cypress-allure-plugin');
-require('cypress-plugin-api');
+import '@shelex/cypress-allure-plugin';
+import 'cypress-plugin-api';
 import './commands'
 
