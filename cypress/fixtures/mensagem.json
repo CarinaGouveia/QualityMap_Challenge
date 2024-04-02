@@ -1,0 +1,11 @@
+{
+    "sucesso":"Your registration completed",
+    "erroNome":"First name is required.",
+    "erroSobrenome":"Last name is required.",
+    "erroEmail":"Email is required.",
+    "erroEmailIncorreto":"Wrong email",
+    "erroPassword":"Password is required.",
+    "erroPasswordConfirme":"Password is required.",
+    "errorPasswordIncompativeis":"The password and confirmation password do not match.",
+    "errorPasswordCaracteresInsuficiente":"Password must meet the following rules: must have at least 6 characters"
+}
