@@ -30,7 +30,7 @@ context('Dado que o usuário acesse a página de registro', () => {
       });
   });
 
-  describe('Quando o usuário não preencher corretamento um campo obrigatório', () => {
+  describe('Quando o usuário não preencher corretamente um campo obrigatório', () => {
     it('Então uma mensagem sinalizando o erro deve ser exibida - Nome', () => {
       cy.allure().descriptionHtml(cenarios.PreenchimentoIncorretoDadosObrigatorios);
       cy.PreencherFormulario(' ',sobrenome,email,password,confirmePassword);
