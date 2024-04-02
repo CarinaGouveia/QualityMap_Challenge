@@ -5,16 +5,20 @@
   "description": "Desafio técnico",
   "version": "1.0.0",
   "main": "cypress.config.js",
-
   "scripts": {
+    "e2e": "cypress run --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run e2e && npm run report:allure",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:api": "cypress run --spec 'cypress/e2e/Back.cy.js'"
   },
   "devDependencies": {
-    "cypress": "^12.14.0"
-  },
-  "dependencies": {
-   
+    "@faker-js/faker": "^8.4.1",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.27.0",
+    "cypress": "^12.14.0",
+    "cypress-plugin-api": "^2.11.1",
+    "mocha-allure-reporter": "^1.4.0"
   }
- 
 }
